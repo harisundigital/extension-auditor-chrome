@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Privacy Policy — Extension Auditor</title>
+<style>
+  body {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 48px 24px 80px;
+    font-family: -apple-system, system-ui, "Segoe UI", sans-serif;
+    line-height: 1.6;
+    color: #1C2530;
+    background: #EDEEF1;
+  }
+  h1 { font-family: Georgia, serif; font-size: 28px; margin-bottom: 4px; }
+  .updated { color: #5B6472; font-size: 13px; margin-bottom: 40px; }
+  h2 { font-size: 18px; margin-top: 40px; }
+  ul { padding-left: 20px; }
+  code {
+    background: #FCFCFB;
+    border: 1px solid #D8DBE0;
+    padding: 1px 5px;
+    border-radius: 3px;
+    font-size: 13px;
+  }
+  a { color: #2F6F76; }
+  .contact {
+    margin-top: 48px;
+    padding-top: 20px;
+    border-top: 1px solid #D8DBE0;
+    color: #5B6472;
+    font-size: 14px;
+  }
+</style>
+</head>
+<body>
+
+<h1>Privacy Policy for Extension Auditor</h1>
+<p class="updated">Last updated: [add date when you publish this]</p>
+
+<h2>The short version</h2>
+<p>
+  Extension Auditor does not collect, store, or transmit any personal data,
+  anywhere. Everything it reads and saves stays on your device.
+</p>
+
+<h2>What the extension does</h2>
+<p>
+  Extension Auditor scans the other extensions installed in your Chrome
+  browser and shows you, in plain language, what each one can access and
+  how risky that is. It does this using Chrome's built-in
+  <code>chrome.management</code> API, which reports metadata about
+  installed extensions — their name, version, permissions, and install
+  source. It does not read the content of any web page you visit.
+</p>
+
+<h2>What we collect</h2>
+<p>Nothing. Specifically:</p>
+<ul>
+  <li>No personal information is collected.</li>
+  <li>No browsing history, page content, or form data is read.</li>
+  <li>No analytics, telemetry, or usage tracking of any kind.</li>
+  <li>No data is ever transmitted off your device — the extension does not
+    communicate with any server we operate, because we don't operate one.</li>
+</ul>
+
+<h2>What we store, and where</h2>
+<p>
+  The extension saves a small snapshot of each installed extension's
+  permissions and risk score using Chrome's local
+  <code>chrome.storage.local</code> API. This data lives only on your
+  device, is used only to detect future changes (like a permissions
+  increase), and is never synced, exported, or sent anywhere by us.
+</p>
+
+<h2>Permissions this extension requests</h2>
+<ul>
+  <li><strong>Manage your apps, extensions, and themes</strong> — to read
+    the list of your other installed extensions and their permissions,
+    and to let you disable, enable, or remove one when you choose to.</li>
+  <li><strong>Storage</strong> — to save the local snapshot described
+    above.</li>
+  <li><strong>Alarms</strong> — to run a periodic background check for
+    permission changes.</li>
+  <li><strong>Notifications</strong> — to alert you locally if an
+    installed extension's risk increases.</li>
+</ul>
+<p>
+  Notice what's not in that list: this extension does not request access
+  to any website. There is no <code>host_permissions</code> entry in its
+  manifest at all.
+</p>
+
+<h2>Changes to this policy</h2>
+<p>
+  If what this extension collects or does ever changes, this page will be
+  updated first, and the update will be reflected in the extension's
+  Chrome Web Store listing before the change takes effect.
+</p>
+
+<div class="contact">
+  <p><strong>Questions?</strong> Contact [your email or support link here].</p>
+</div>
+
+</body>
+</html>
